@@ -44,7 +44,7 @@ class Order {                // made a new class after orders
          Quantity: ${this.quantity}, 
          Total Price: $${this.totalPrice}`;
     }
-}
+} ;
 
 const order1 = new Order(501, prod1, 2);
 console.log(order1.getOrderDetails()); 
