@@ -1,5 +1,5 @@
 // Task 1 - Created Product Class
-class Product {
+class Product {   // make a class of products 
     constructor(name, id, price, stock) {
         this.name = name;
         this.id = id;
@@ -7,14 +7,17 @@ class Product {
         this.stock = stock;
     }
 
-    getDetails() {
-        return `Product: ${this.name}, ID: ${this.id}, Price: $${this.price}, Stock: ${this.stock}`;
+    getDetails() {   // returned what is ordered 
+        return `Product: ${this.name}, 
+        ID: ${this.id}, 
+        Price: $${this.price}, 
+        Stock: ${this.stock}`;
     }
 
     updateStock(quantity) {
         this.stock -= quantity;
     }
-}
+} ;
 
 const prod1 = new Product("Laptop", 101, 1200, 10);
 console.log(prod1.getDetails()); 
@@ -26,7 +29,7 @@ console.log(prod1.getDetails());
 
 
 // Task 2 - Created Order Class
-class Order {
+class Order {                // made a new class after orders 
     constructor(orderId, product, quantity) {
         this.orderId = orderId;
         this.product = product;
@@ -36,7 +39,10 @@ class Order {
     }
 
     getOrderDetails() {
-        return `Order ID: ${this.orderId}, Product: ${this.product.name}, Quantity: ${this.quantity}, Total Price: $${this.totalPrice}`;
+        return `Order ID: ${this.orderId}, 
+        Product: ${this.product.name},
+         Quantity: ${this.quantity}, 
+         Total Price: $${this.totalPrice}`;
     }
 }
 
@@ -109,3 +115,5 @@ console.log(prod1.getDetails());
 inventory.restockProduct(101, 5);
 console.log(prod1.getDetails()); 
 // Expected: "Product: Laptop, ID: 101, Price: $1200, Stock: 8"
+
+// PUT ALL THE TEST DATA AT THE END TO MAKE IT NEATER!!!!!
