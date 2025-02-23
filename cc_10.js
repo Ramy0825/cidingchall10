@@ -85,7 +85,7 @@ class Inventory {
         this.orders.forEach(order => {
             console.log(order.getOrderDetails());
         });
-    }
+    };
 
     // Task 5: Implementing Product Restocking
     restockProduct(productId, quantity) {
