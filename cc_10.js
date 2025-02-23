@@ -96,7 +96,7 @@ class Inventory {
             console.log("Product not found.");
         }
     }
-}
+};
 
 // Testing Product and Inventory Functionality
 const inventory = new Inventory();
