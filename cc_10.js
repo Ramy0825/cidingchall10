@@ -69,7 +69,7 @@ class Inventory {
         this.products.forEach(product => {
             console.log(product.getDetails());
         });
-    }
+    } ; 
 
     // Task 4: Implemented Order Management
     placeOrder(orderId, product, quantity) {
